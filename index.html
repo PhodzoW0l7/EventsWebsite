@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dakalolashu | Luxury Weddings & Events</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Dakalolashu</a>
+      <ul class="nav-links">
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       ① HERO — full-screen image/video
+  ═══════════════════════════════════════ -->
+  <section id="hero">
+    <!-- Swap the img src for your client's actual photo/video -->
+    <div class="hero-media">
+      <img src="assets/random.jpeg" alt="Dakalolashu luxury event setup" />
+      <!-- OR use a video:
+      <video autoplay muted loop playsinline>
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+      -->
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Welcome to</p>
+      <h1 class="hero-title">Dakalolashu</h1>
+      <p class="hero-sub">Where every moment becomes a masterpiece.</p>
+      <a href="#cta" class="btn-primary">Begin Your Experience</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ② MEET THE FOUNDER
+  ═══════════════════════════════════════ -->
+  <section id="founder">
+    <div class="container founder-grid">
+      <div class="founder-image reveal">
+        <img src="assets/random.jpeg" alt="Founder portrait" />
+      </div>
+      <div class="founder-text reveal">
+        <span class="section-label">Meet the Founder</span>
+        <h2>Crafting Experiences <br /><em>with Intention</em></h2>
+        <p>
+          <!-- Replace with real bio -->
+          With over a decade of curating unforgettable weddings and private
+          celebrations across Southern Africa, [Founder Name] brings an
+          eye for elegance and a heart for storytelling to every event.
+        </p>
+        <a href="#cta" class="btn-secondary">Work With Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ③ SERVICES SHOWCASE
+  ═══════════════════════════════════════ -->
+  <section id="services">
+    <div class="container">
+      <span class="section-label reveal">What We Offer</span>
+      <h2 class="section-title reveal">Our Services</h2>
+      <div class="services-grid">
+        <!-- Duplicate .service-card for each service -->
+        <div class="service-card reveal">
+          <div class="service-icon">✦</div>
+          <h3>Wedding Planning</h3>
+          <p>Full-service planning from vision to vow.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">✦</div>
+          <h3>Décor & Styling</h3>
+          <p>Bespoke tablescapes, florals, and installations.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">✦</div>
+          <h3>Event Coordination</h3>
+          <p>Seamless day-of management so you can be present.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">✦</div>
+          <h3>Private Celebrations</h3>
+          <p>Birthdays, anniversaries, and intimate gatherings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ④ GALLERY SLIDER
+  ═══════════════════════════════════════ -->
+  <section id="gallery">
+    <div class="container">
+      <span class="section-label reveal">Our Work</span>
+      <h2 class="section-title reveal">A Glimpse of Magic</h2>
+    </div>
+    <div class="slider-wrapper">
+      <div class="slider-track" id="sliderTrack">
+        <!-- Add as many .slide items as you need -->
+        <div class="slide"><img src="assets/random.jpeg" alt="Event 1" /></div>
+        <div class="slide"><img src="assets/random.jpeg" alt="Event 2" /></div>
+        <div class="slide"><img src="assets/random.jpeg" alt="Event 3" /></div>
+        <div class="slide"><img src="assets/random.jpeg" alt="Event 4" /></div>
+      </div>
+      <button class="slider-btn prev" id="sliderPrev" aria-label="Previous">&#8592;</button>
+      <button class="slider-btn next" id="sliderNext" aria-label="Next">&#8594;</button>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ⑤ TESTIMONIALS
+  ═══════════════════════════════════════ -->
+  <section id="testimonials">
+    <div class="container">
+      <span class="section-label reveal">Kind Words</span>
+      <h2 class="section-title reveal">What Our Clients Say</h2>
+      <div class="testimonials-track" id="testimonialsTrack">
+        <!-- Add more .testimonial-card blocks as needed -->
+        <div class="testimonial-card">
+          <p class="quote">"Dakalolashu turned our wedding into the most beautiful day of our lives. Every detail was beyond perfect."</p>
+          <div class="client-info">
+            <strong>Amara & Luca</strong>
+            <span>Wedding — Johannesburg, 2024</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="quote">"From the florals to the final dance, nothing was left to chance. Truly a luxury experience."</p>
+          <div class="client-info">
+            <strong>Ntombi M.</strong>
+            <span>Private Celebration — Pretoria, 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ⑥ CTA — Begin Your Experience
+  ═══════════════════════════════════════ -->
+  <section id="cta">
+    <div class="cta-overlay"></div>
+    <div class="cta-content reveal">
+      <span class="section-label light">Ready?</span>
+      <h2>Begin Your <em>Experience</em></h2>
+      <p>Let's create something extraordinary together. Reach out to start planning your perfect event.</p>
+      <a href="mailto:hello@dakalolashu.com" class="btn-primary large">Send an Enquiry</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ⑦ INSTAGRAM / SOCIAL SHOWCASE
+  ═══════════════════════════════════════ -->
+  <section id="social">
+    <div class="container">
+      <span class="section-label reveal">Follow the Journey</span>
+      <h2 class="section-title reveal">@dakalolashu</h2>
+      <div class="social-grid" id="socialGrid">
+        <!-- Swap src values for real Instagram screenshots or use an embed API -->
+        <a href="#" class="social-tile" target="_blank" rel="noopener"><img src="assets/insta1.jpg" alt="Instagram post 1" /></a>
+        <a href="#" class="social-tile" target="_blank" rel="noopener"><img src="assets/insta2.jpg" alt="Instagram post 2" /></a>
+        <a href="#" class="social-tile" target="_blank" rel="noopener"><img src="assets/insta3.jpg" alt="Instagram post 3" /></a>
+        <a href="#" class="social-tile" target="_blank" rel="noopener"><img src="assets/insta4.jpg" alt="Instagram post 4" /></a>
+        <a href="#" class="social-tile" target="_blank" rel="noopener"><img src="assets/insta5.jpg" alt="Instagram post 5" /></a>
+        <a href="#" class="social-tile" target="_blank" rel="noopener"><img src="assets/insta6.jpg" alt="Instagram post 6" /></a>
+      </div>
+      <a href="https://instagram.com/dakalolashu" target="_blank" class="btn-secondary" rel="noopener">Follow on Instagram</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="footer-logo">Dakalolashu</a>
+      <nav class="footer-nav">
+        <a href="experiences.html">Experiences</a>
+        <a href="#services">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#founder">About</a>
+        <a href="#cta">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2025 Dakalolashu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
