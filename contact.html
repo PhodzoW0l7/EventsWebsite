@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Begin Your Experience | Dakalolashu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://googleapis.com" />
+  <link rel="preconnect" href="https://gstatic.com" crossorigin />
+  <link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAV (Matches Index, Experiences, Services & About)
+  ═══════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo-link"><img src="assets/logo.png" alt="Logo" class="nav-logo"></a>
+      <ul class="nav-links">
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       ① INNER HERO — Sleek Header
+  ═══════════════════════════════════════ -->
+  <section id="inner-hero">
+    <div class="inner-hero-content container">
+      <span class="section-label">Connect With Us</span>
+      <h1>Begin Your <br><em>Experience</em></h1>
+      <p class="hero-sub-text">
+        Let us transform your meaningful milestones into timeless, beautifully orchestrated memories.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ② CONTACT & INQUIRY SPLIT SECTION
+  ═══════════════════════════════════════ -->
+  <section id="contact-section">
+    <div class="container contact-grid">
+      
+      <!-- Left Column: Direct Contacts -->
+      <div class="contact-details">
+        <span class="section-label">Inquiries</span>
+        <h2>Get in Touch</h2>
+        <p class="contact-intro">
+          Whether planning a luxury wedding, a destination celebration, or joining a community experience, we want to hear your vision.
+        </p>
+        
+        <div class="contact-methods">
+          <div class="method-item">
+            <span>Email Directly</span>
+            <a href="mailto:info@dakalolashu.com">info@dakalolashu.com</a>
+          </div>
+          
+          <div class="method-item">
+            <span>Hours of Operation</span>
+            <p>Monday — Friday: 09:00 - 17:00</p>
+            <p>Weekends: By Appointment Only</p>
+          </div>
+          
+          <div class="method-item">
+            <span>Based In</span>
+            <p>South Africa</p>
+            <small class="location-note">Serving Sabi Sands, Kruger National Park, and Worldwide Destinations</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Luxury Inquiry Form -->
+      <div class="contact-form-container">
+        <form action="#" method="POST" class="luxury-form">
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Full Name *</label>
+              <input type="text" id="name" name="name" required placeholder="e.g., Sarah Smith" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="e.g., sarah@example.com" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="e.g., +27 82 123 4567" />
+            </div>
+            <div class="form-group">
+              <label for="service-type">Interest *</label>
+              <select id="service-type" name="service-type" required>
+                <option value="" disabled selected>Select an experience...</option>
+                <option value="wedding-planning">Luxury Wedding Planning & Coordination</option>
+                <option value="concept-styling">Event Concept Development & Styling</option>
+                <option value="destination">Destination Weddings & Celebrations</option>
+                <option value="community-event">Signature Community Experiences</option>
+                <option value="other">Other Luxury Milestones</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="event-date">Desired Event Date (If known)</label>
+              <input type="date" id="event-date" name="event-date" />
+            </div>
+            <div class="form-group">
+              <label for="location">Proposed Location/Venue</label>
+              <input type="text" id="location" name="location" placeholder="e.g., Sabi Sands Lodge" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell Us About Your Vision *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Share details about the mood, scale, and specific ideas you want to create..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Send Inquiry</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
