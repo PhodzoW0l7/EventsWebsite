@@ -2,16 +2,20 @@
    CSS CUSTOM PROPERTIES (design tokens)
 ═══════════════════════════════════════ */
 :root {
-  --gold:       #4c97c9;
-  --gold-light: #a3d2e8;
+  --gold:       #70add3;
+  --gold-light: rgb(202, 238, 255);
   --cream:      #F9F5EE;
   --dark:       #12171a;
   --dark-mid:   #222a2e;
   --text:       #2e363b;
   --text-muted: #68717a;
 
-  --font-display: 'Cormorant Garamond', Georgia, serif;
-  --font-body:    'Jost', sans-serif;
+ --font-display: 'Raleway', sans-serif;
+  --font-body:    'Raleway', sans-serif;
+
+  --section-pad: 7rem 0;
+  --container:   1200px;
+  --transition:  0.4s ease;
 
   --section-pad: 7rem 0;
   --container:   1200px;
